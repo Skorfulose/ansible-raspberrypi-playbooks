@@ -26,6 +26,11 @@
 
 * Installs the [Mosquitto](http://mosquitto.org) MQTT broker
 
+### Home Assistant (home-assistant.yml)
+
+* Installs [Home Assistant](https://home-assistant.io/)
+* Installs [OpenZWave](http://www.openzwave.net)
+
 ### Misc (misc.yml)
 
 This playbook performs some basic configurations I prefer to have available on my Linux machines.
