@@ -30,6 +30,12 @@
 
 * Installs [Home Assistant](https://home-assistant.io/)
 * Installs [OpenZWave](http://www.openzwave.net)
+* Clones [my config from GitHub](https://github.com/Skorfulose/home-assistant-config)
+
+### Hyperion (hyperion.yml)
+
+* Installs [Hyperion](https://hyperion-project.org)
+* Applies my configuration
 
 ### Misc (misc.yml)
 

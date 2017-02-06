@@ -2,3 +2,4 @@
 - include: home-assistant.yml
 - include: ozwcp.yml
 - include: mosquitto.yml
+- include: hyperion.yml
