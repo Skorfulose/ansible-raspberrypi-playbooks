@@ -22,6 +22,10 @@
 
 * Installs [OpenZWave Control Panel](https://github.com/OpenZWave/open-zwave-control-panel)
 
+### Mosquitto (mosquitto.yml)
+
+* Installs the [Mosquitto](http://mosquitto.org) MQTT broker
+
 ### Misc (misc.yml)
 
 This playbook performs some basic configurations I prefer to have available on my Linux machines.
