@@ -1,5 +1,4 @@
 - hosts: raspberrypi*
-  remote_user: pi
   become: true
   roles:
     - role: mikolak.raspi-config
@@ -7,6 +6,9 @@
       raspi_config_expanded_filesystem: yes
       raspi_config_locale: de_DE.UTF8
       raspi_config_timezone: Europe/Berlin
+      raspi_config_fail_on_auth_test: false
       raspi_config_replace_user:
-        name: thomas
+        name: "{{ main_user }}"
         path_to_ssh_key: "~/.ssh/id_rsa.pub"
+  vars_files:
+    - vars/main.yml
