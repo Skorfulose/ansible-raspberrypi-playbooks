@@ -1,0 +1,4 @@
+- hosts: raspberrypi
+  roles:
+     - role: mechaxl.ozwcp
+       ozwcp_user: ozwcp

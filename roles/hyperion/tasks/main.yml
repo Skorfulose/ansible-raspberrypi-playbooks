@@ -1,0 +1,10 @@
+- name: download hyperion install script
+  get_url: url=https://raw.githubusercontent.com/hyperion-project/hyperion/master/bin/install_hyperion.sh dest=/tmp/ mode=0774
+
+- name: execute hyperion install script
+  shell: /tmp/install_hyperion.sh
+  become: true
+
+- name: copy hyperion.config.json
+  copy: src=hyperion.config.json dest=/etc/hyperion/hyperion.config.json owner=root group=root mode=0644
+  become: true

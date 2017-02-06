@@ -1,0 +1,15 @@
+- hosts: raspberrypi*
+  become: true
+  roles:
+    - role: mikolak.raspi-config
+      raspi_config_update_packages: yes
+      raspi_config_expanded_filesystem: yes
+      raspi_config_ensure_optimal_cpu_params: false
+      raspi_config_locale: de_DE.UTF8
+      raspi_config_timezone: Europe/Berlin
+      raspi_config_fail_on_auth_test: false
+      raspi_config_replace_user:
+        name: "{{ main_user }}"
+        path_to_ssh_key: "~/.ssh/id_rsa.pub"
+  vars_files:
+    - vars/main.yml

@@ -1,0 +1,16 @@
+- name: delete existing config folder (git clone will fail in a non-empty dir)
+  file:
+    path: /home/hass/.homeassistant
+    state: absent
+  become: true
+- name: clone my config from GitHub
+  git:
+    repo: https://github.com/Skorfulose/home-assistant-config.git
+    dest: /home/hass/.homeassistant
+  become: true
+  become_user: hass
+- name: restart home assistant to apply config
+  service:
+    name: home-assistant
+    state: restarted
+  become: true

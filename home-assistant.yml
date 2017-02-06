@@ -1,0 +1,8 @@
+- hosts: raspberrypi
+  roles:
+    - role: mechaxl.homeassistant
+      enable_zwave: yes
+      hass_configuration: |
+        homeassistant:
+          name: Home
+    - role: home-assistant-config
