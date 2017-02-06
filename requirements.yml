@@ -1,0 +1,4 @@
+- src: mikolak.raspi-config
+- src: pbonrad.mosquitto
+- src: mechaxl.homeassistant
+- src: mechaxl.ozwcp
