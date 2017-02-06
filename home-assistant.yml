@@ -5,3 +5,4 @@
       hass_configuration: |
         homeassistant:
           name: Home
+    - role: home-assistant-config
