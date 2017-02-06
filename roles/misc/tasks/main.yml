@@ -1,0 +1,13 @@
+- name: set ll alias
+  lineinfile:
+    dest: "~/.bash_aliases"
+    line: "alias ll='ls -alF'"
+    create: yes
+    mode: 0644
+    state: present
+
+- name: install htop
+  become: true
+  package:
+    name: htop
+    state: present
